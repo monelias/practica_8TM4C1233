@@ -126,19 +126,19 @@ int main(void)
     Configurar_PLL(_20MHZ);
                 
              OLED_YX( 0, 0 );
-             OLED_Write_String( "Alberto " );
+             OLED_Write_String( "Practica 8 " );
                              Delay_ms(1000);
 
              OLED_YX(1, 0);
-             OLED_Write_String ("Gonzalez ");
+             OLED_Write_String ("tiva chica ");
                          Delay_ms(1000);
 
              OLED_YX(2, 0);
-             OLED_Write_String ("Moreno");
+             OLED_Write_String ("Monse.");
                          Delay_ms(1000);
 
              OLED_YX(3, 0);
-             OLED_Write_String ("Grupo 41");
+             OLED_Write_String ("Elias");
                          Delay_ms(1000); 
         while ( 1 ) {
             
@@ -237,14 +237,7 @@ extern void OLED_Command( uint8_t temp){
 	  I2C3_Wr(0x3C,0x00,temp);
 }
 
-/*******************************************************************************
- * Function: void OLED_Data ( uint8_t temp)
- *
- * Returns: Nothing
- *
- * Description: sends data to the OLED
- * 
- ******************************************************************************/
+
 
 extern void OLED_Data( uint8_t temp){
  
@@ -252,14 +245,7 @@ extern void OLED_Data( uint8_t temp){
 	  
 }
 
-/*******************************************************************************
- * Function: void OLED_Init ()
- *
- * Returns: Nothing
- *
- * Description: Initializes OLED
- * 
- ******************************************************************************/
+
 
 extern void OLED_Init() {
     
